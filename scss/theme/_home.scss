@@ -56,15 +56,21 @@ body {
 	// background-image: -ms-linear-gradient( 0deg, rgb(230,101,135) 0%, rgb(240,148,88) 100%);
 }
 .p1-gradient-color {
-	background: -webkit-linear-gradient(0deg, #e66587, #f09458);
+	background-color: $primary;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 .section-title {
 	padding-bottom: 30px;
 	h2 {
-		margin-bottom: 5px;
-	}
+    color: $white;
+    margin-bottom: 5px;
+    margin-top: 80px
+  }
+  h4 {
+    color: $white;
+    font-weight: 400;
+  }
 }
 .mt-sm-30 {
 	@include media-breakpoint-down (sm) {
@@ -197,7 +203,11 @@ body {
 }
 .service-area {
 	@extend .p1-gradient-bg;
-	padding: 100px 0;
+  padding: 32px 0;
+
+  .row {
+    margin: 24px 12px
+  }
 }
 
 .single-service {
@@ -233,7 +243,7 @@ body {
 	}
 }
 .amazing-works-area {
-	background: #f9f9ff;
+	background: $white;
 	padding: 100px 0;
 }
 .active-works-carousel {
@@ -532,3 +542,14 @@ footer {
 	}
 }
 //----------- End Generic Page -------------//
+
+.service-img {
+  width: 100%;
+}
+
+.service-img-lg {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -470,7 +470,7 @@ body {
 }
 
 footer {
-  background:rgba(255, 255, 255, 0.3);
+  background:rgba(255, 255, 255, 0.75);
   padding: 20px 0;
   text-align: center;
 
@@ -593,5 +593,13 @@ footer {
       margin-bottom: 8px;
     }
 
+    &:hover {
+      .team-member-avator {
+        img {
+          @include grayscale(0%);
+          @include transition();
+        }
+      }
+    }
   }
 }

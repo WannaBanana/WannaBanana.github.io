@@ -102,19 +102,19 @@ body {
 		position: relative;
 		z-index: 2;
 	}
-	&:after {
-		position: absolute;
-		content: "";
-		@extend .p1-gradient-bg;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		left: 0;
-		border-radius: 20px;
-		opacity: 0;
-		@include transition();
-		z-index: 1;
-	}
+	// &:after {
+	// 	position: absolute;
+	// 	content: "";
+	// 	@extend .p1-gradient-bg;
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	top: 0;
+	// 	left: 0;
+	// 	border-radius: 20px;
+	// 	opacity: 0;
+	// 	@include transition();
+	// 	z-index: 1;
+	// }
 	&:hover {
 		color: $white;
 		border: 1px solid transparent;
@@ -122,13 +122,13 @@ body {
 			opacity: 1;
 		}
   }
-  &.hover {
-		color: $white;
-		border: 1px solid transparent;
-		&:after {
-			opacity: 1;
-		}
-	}
+  // &.hover {
+	// 	color: $white;
+	// 	border: 1px solid transparent;
+	// 	&:after {
+	// 		opacity: 1;
+	// 	}
+	// }
 }
 .banner-area {
 	@extend .p1-gradient-bg;
@@ -148,9 +148,12 @@ body {
 		margin-bottom: 20px;
   }
 
-  > .primary-btn {
+  .primary-btn {
     &:hover {
       background: $white;
+      span {
+        color: $primary;
+      }
     }
   }
 }
@@ -347,8 +350,21 @@ body {
 		z-index: 2;
 		h6 {
 			margin-bottom: 15px;
-		}
+    }
 
+    .primary-btn {
+      background: $primary;
+      span {
+        color: $white;
+      }
+      &:hover {
+        border: 1px solid $primary;
+        background: $white;
+        span {
+          color: $primary;
+        }
+      }
+    }
 	}
 	position: relative;
 	&:after {

@@ -37,7 +37,7 @@ gulp.task('imgmini', () =>
       .pipe(gulp.dest(config.paths.public + '/img'))
 )
 
-watch([config.paths.sass + '**/*.scss'], () => {
+watch([config.paths.sass + '/**/**.scss'], () => {
   gulp.start('sass')
 })
 

@@ -60,16 +60,24 @@ body {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-.section-title {
-	padding-bottom: 30px;
-	h2 {
-    color: $white;
-    margin-bottom: 5px;
-    margin-top: 80px
-  }
-  h4 {
-    color: $white;
-    font-weight: 400;
+
+.section-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .section-title {
+
+    padding-bottom: 30px;
+    h2 {
+      color: $white;
+      margin-bottom: 5px;
+      // margin-top: 80px
+    }
+    h4 {
+      color: $white;
+      font-weight: 400;
+    }
   }
 }
 .mt-sm-30 {

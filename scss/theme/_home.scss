@@ -78,8 +78,12 @@ body {
       color: $white;
       font-weight: 400;
     }
-  }
+	}
 }
+.section-img {
+	margin-bottom: 32px;
+}
+
 .mt-sm-30 {
 	@include media-breakpoint-down (sm) {
 		margin-top: 30px;
@@ -243,7 +247,12 @@ body {
 
   .row {
     margin: 24px 12px
-  }
+	}
+	.row-sm-reverse {
+		@include mobile {
+			flex-direction: column-reverse;
+		}
+	}
 }
 
 .single-service {
